@@ -1,0 +1,376 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+
+/* Calculator.css */
+/* .input-row {
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.calculator-table {
+  width: 400px;
+  margin-top: 20px;
+}
+
+.calculator-table th,
+.calculator-table td {
+  border: 1px solid white;
+  padding: 4px;
+  text-align: center;
+} */
+
+
+
+/* Chefify */
+/* .container {
+  display: grid;
+  grid-template-areas:
+    "Header Header"
+    "Menu Content"
+    "Footer Footer";
+  grid-template-columns: 2fr 4fr;
+  grid-template-rows: 1fr 15fr 4fr;
+  width: 1440px;
+  height: 953px;
+}
+
+.header {
+  grid-area: Header;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid gray;
+  padding: 10px 30px;
+}
+
+.header-left {
+  display: flex;
+  flex: 4;
+}
+
+.header-left input {
+  background-color: #F3F4F6;
+  border-radius: 15px;
+  border: none;
+  margin-left: 20px;
+  width: 100%;
+  padding-left: 20px;
+}
+
+.header-center {
+  flex: 4;
+  justify-content: space-around;
+  display: flex;
+}
+
+.header-center a {
+  color: #565E6C;
+  font-size: 15px;
+}
+
+.header-center a:hover {
+  color: #F44B87;
+}
+
+.header-right {
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-right button {
+  color: #F44B87;
+  background-color: #FEF0F5;
+}
+
+.menu {
+  grid-area: Menu;
+  border-left: 3px solid gray;
+  display: flex;
+  justify-content: end;
+  padding: 20px 0;
+}
+
+.menu-box {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-title {
+  display: flex;
+  align-items: center;
+}
+
+.menu-title p {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+}
+
+.menu-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.menu-checkbox-row {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-checkbox-row div {
+  flex: 1;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+.menu-checkbox-row input {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.divider {
+  border: 1px solid;
+  margin: 0 -30px;
+  border-bottom: 0;
+}
+
+.menu-time {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu-rating {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-apply {
+  margin: 20px -30px 0;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-apply button {
+  background-color: #F44B87;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  width: 80%;
+}
+
+.content {
+  grid-area: Content;
+  border-right: 3px solid gray;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.no-results {
+  font-weight: bolder;
+  font-size: 22px;
+}
+
+.alt-text {
+  font-weight: bold;
+}
+
+.alt-tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.alt-tags button{
+  background-color: #F44B87;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.alt-tags button:hover {
+  background-color: #ff0066;
+  color: white;
+}
+
+.footer {
+  grid-area: Footer;
+  background-color: black;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.footer-left {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.footer-subscribe {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.footer-subscribe input {
+  flex: 1;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.footer-subscribe button {
+  border: none;
+  border-radius: 10px;
+  background-color: #F44B87;
+  color: white;
+  padding: 10px 20px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+
+.footer-middle {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25px;
+  color: white;
+}
+
+.footer-middle a {
+  color: white;
+}
+
+.footer-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  color: white;
+} */
+
+
+/* App.css */
+
+.hook-sample-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 1.5rem;
+  width: 100vw;
+  background-color: #f59e0b; /* bg-amber-500 */
+  padding: 1rem;
+}
+
+.hook-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  align-items: center;
+  gap: 1.25rem;
+  background-color: white;
+}
+
+.hook-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.hook-input {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  width: 80%;
+  background-color: #fff;
+}
+
+.hook-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+.hook-memo-child {
+  height: 50%;
+  width: 50%;
+  background-color: #93c5fd; /* bg-blue-300 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
