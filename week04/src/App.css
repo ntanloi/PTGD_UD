@@ -1,0 +1,313 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+
+.recipe-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.recipe-img {
+  border-radius: 20px 20px 0 0;
+  object-fit: contain;
+}
+
+.recipe-content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #cfcdc8;
+  border-radius: 0 0 20px 20px;
+}
+
+.recipe-header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.recipe-name {
+  color: black;
+  width: 200px;
+  text-align: start;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+}
+
+.bookmark-btn {
+  border-radius: 100px;
+  padding: 7px 10px;
+  margin: 0;
+  background-color: white;
+  border: 1px solid #F44B87FF;
+  color: #F44B87FF;
+  cursor: pointer;
+}
+
+.recipe-time {
+  margin-top: 10px;
+  line-height: 40px;
+  color: #F44B87FF;
+  background-color: #FBC8DAFF;
+  width: 40%;
+  border-radius: 30px;
+  padding-left: 10px;
+}
+
+
+
+.chefify-container {
+  display: grid;
+  grid-template-areas:
+    "Header"
+    "Content"
+    "Footer";
+  grid-template-columns: 2fr;
+  grid-template-rows: 1fr 15fr 4fr;
+  width: 1440px;
+  height: 953px;
+}
+
+.chefify-header {
+  background-color: white;
+  grid-area: Header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #cfcdc8;
+  padding: 10px 30px;
+}
+
+.chefify-header-left {
+  display: flex;
+  flex: 4;
+}
+
+.chefify-header-left input {
+  background-color: #f3f4f6ff;
+  border-radius: 15px;
+  border: 0;
+  margin-left: 20px;
+  width: 100%;
+  padding-left: 20px;
+}
+
+.chefify-nav {
+  flex: 4;
+  justify-content: space-around;
+  display: flex;
+}
+
+.chefify-nav a {
+  color: #565e6cff;
+  font-size: 15px;
+}
+
+.chefify-user {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 2;
+}
+
+.chefify-user button {
+  color: #f44b87ff;
+  background-color: #fef0f5ff;
+}
+
+.chefify-content {
+  grid-area: Content;
+  padding: 30px 100px;
+  border-right: 3px solid #cfcdc8;
+  border-left: 3px solid #cfcdc8;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-active {
+  color: #f44b87ff;
+  font-weight: bold;
+}
+
+.user-info p {
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-description {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.user-actions button {
+  background-color: #f44b87ff;
+  color: white;
+  padding: 10px;
+  display: flex;
+  gap: 5px;
+}
+
+.table-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-buttons {
+  display: flex;
+  width: 100%;
+  border-bottom: 3px solid #cfcdc8;
+}
+
+.tab-buttons button {
+  border-radius: 20px 20px 0 0;
+  font-weight: bold;
+  padding: 15px;
+  background-color: white;
+  color: #424955ff;
+}
+
+.tab-buttons .active {
+  background-color: #fbc8daff;
+  color: #f44b87ff;
+}
+
+.recipe-list {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.chefify-footer {
+  background-color: black;
+  grid-area: Footer;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: white;
+}
+
+.footer-main {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.footer-about p:first-child {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.subscribe-form input {
+  flex: 1;
+  border: 0;
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.subscribe-form button {
+  border: 0;
+  border-radius: 10px;
+  background-color: #f44b87ff;
+  color: white;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-column {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 25px;
+  align-items: start;
+}
+
+.footer-column p {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.footer-column a {
+  color: white;
+}
